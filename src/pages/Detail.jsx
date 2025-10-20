@@ -114,7 +114,7 @@ const Detail = () => {
     return (
         <div style={{ backgroundColor: '#f8f9fa', minHeight: '100vh', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
             {/* Header */}
-            <div style={{ backgroundColor: '#A7AAE1', color: '#ffffff', padding: '10px 0', fontSize: '13px' }}>
+            <div style={{ backgroundColor: '#F5F5F5', padding: '10px 0', fontSize: '13px' }}>
                 <div className="container" style={{ maxWidth: '1140px' }}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <Home size={14} style={{ marginRight: '6px' }} />
@@ -131,7 +131,7 @@ const Detail = () => {
                 <button
                     onClick={() => navigate('/')}
                     style={{
-                        backgroundColor: '#B7B1F2',
+                        backgroundColor: '#3A4750',
                         color: "#ffffffff",
                         border: '1px solid #dee2e6',
                         borderRadius: '4px',

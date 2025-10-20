@@ -33,7 +33,7 @@ const Sidebar = () => {
         '& .MuiDrawer-paper': {
           width: drawerWidth,
           boxSizing: 'border-box',
-          bgcolor: '#50589C',
+          bgcolor: '#222831',
           color: 'white',
           borderRight: 'none',
         },
@@ -47,7 +47,7 @@ const Sidebar = () => {
               width: 48,
               height: 48,
               borderRadius: 2,
-              background: '#6366f1',
+              background: '#F7F7F7',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -75,11 +75,11 @@ const Sidebar = () => {
               onClick={() => navigate(item.path)}
               sx={{
                 borderRadius: 2,
-                color: location.pathname === item.path ? '#6366f1' : '#a0aec0',
-                bgcolor: location.pathname === item.path ? '#EBD6FB' : 'transparent',
+                color: location.pathname === item.path ? '#363636' : '#a0aec0',
+                bgcolor: location.pathname === item.path ? '#889095ff' : 'transparent',
                 '&:hover': {
-                  bgcolor: '#8F87F1',
-                  color: 'white',
+                  bgcolor: '#FDF6FA',
+                  color: '#363636',
                 },
                 transition: 'all 0.2s ease',
                 py: 1.5,

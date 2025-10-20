@@ -126,7 +126,7 @@ const Dashboard = () => {
   };
 
   return (
-    <Box sx={{ bgcolor: "#A7AAE1", minHeight: "100vh", px: 5 }}>
+    <Box sx={{ bgcolor: "#F5F5F5", minHeight: "100vh", px: 5 }}>
       {/* Header Section */}
       <Box sx={{ bgcolor: "white", px: 5, mx: -5, }}>
         <Typography variant="h4" sx={{ fontWeight: 700, color: "#111827", mb: 0.5 }}>
@@ -138,7 +138,7 @@ const Dashboard = () => {
       </Box>
 
       {/* Stats Cards */}
-      <Box sx={{ px: 4, py: 3 }}>
+      <Box sx={{ px: 4, py: 4 }}>
         <Grid container spacing={5}>
           {cards.map((card, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>

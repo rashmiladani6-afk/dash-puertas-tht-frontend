@@ -62,15 +62,15 @@ const SubirPedidos = () => {
           <Typography variant="h4" sx={{ fontWeight: 700, color: "#1e293b", mb: 1 }}>
             Subir Pedidos
           </Typography>
-          <Typography sx={{ color: "#64748b", fontSize: 14 }}>
+          <Typography sx={{ color: "#3E3636", fontSize: 14 }}>
             Sube archivos PDF con información de pedidos
           </Typography>
         </Box>
 
         {/* Upload Card */}
-        <Card sx={{ maxWidth: 800, mx: 'auto', p: 4, borderRadius: 3, boxShadow: '0 1px 3px rgba(0,0,0,0.1)', marginRight: 30, bgcolor: "#A7AAE1" }}>
+        <Card sx={{ maxWidth: 800, mx: 'auto', p: 4, borderRadius: 3, boxShadow: '0 1px 3px rgba(0,0,0,0.1)', marginRight: 30, bgcolor: "#F5F5F5" }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 3 }}>
-            <CloudUploadIcon sx={{ fontSize: 28, color: "#1e293b" }} />
+            <CloudUploadIcon sx={{ fontSize: 28, color: "#000000" }} />
             <Typography variant="h6" sx={{ fontWeight: 600, color: "#1e293b" }}>
               Subir Pedidos en PDF
             </Typography>
@@ -84,7 +84,7 @@ const SubirPedidos = () => {
             onDrop={handleDrop}
             elevation={0}
             sx={{
-              border: dragActive ? '2px dashed #6366f1' : '2px dashed #cbd5e1',
+              border: dragActive ? '2px dashed #000000' : '2px dashed #cbd5e1',
               borderRadius: 3,
               p: 6,
               textAlign: 'center',
@@ -92,7 +92,7 @@ const SubirPedidos = () => {
               cursor: 'pointer',
               transition: 'all 0.3s ease',
               '&:hover': {
-                borderColor: '#6366f1',
+                borderColor: '#000000',
                 bgcolor: '#f8fafc',
               }
             }}
@@ -102,7 +102,7 @@ const SubirPedidos = () => {
                 width: 80,
                 height: 80,
                 borderRadius: '50%',
-                bgcolor: '#e0e7ff',
+                bgcolor: '#ecececff',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -110,7 +110,7 @@ const SubirPedidos = () => {
                 mb: 3,
               }}
             >
-              <FileText size={40} color="#6366f1" />
+              <FileText size={40} color="#303841" />
             </Box>
 
             <Typography variant="h6" sx={{ fontWeight: 600, color: "#1e293b", mb: 1 }}>
@@ -141,9 +141,9 @@ const SubirPedidos = () => {
                   px: 3,
                   py: 1,
                   '&:hover': {
-                    borderColor: '#6366f1',
-                    color: '#6366f1',
-                    bgcolor: '#eef2ff',
+                    borderColor: '#303841',
+                    color: '#000000ff',
+                    bgcolor: '#cfcfcfff',
                   }
                 }}
               >
@@ -188,7 +188,7 @@ const SubirPedidos = () => {
                     }
                   >
                     <ListItemIcon>
-                      <FileText size={20} color="#6366f1" />
+                      <FileText size={20} color="#466588ff" />
                     </ListItemIcon>
                     <ListItemText
                       primary={
@@ -210,7 +210,7 @@ const SubirPedidos = () => {
                 variant="contained"
                 sx={{
                   mt: 2,
-                  bgcolor: '#6366f1',
+                  bgcolor: '#222831',
                   color: 'white',
                   py: 1.5,
                   textTransform: 'none',
@@ -218,7 +218,7 @@ const SubirPedidos = () => {
                   fontSize: 15,
                   borderRadius: 2,
                   '&:hover': {
-                    bgcolor: '#4f46e5',
+                    bgcolor: '#56585aff',
                   }
                 }}
               >
@@ -233,12 +233,12 @@ const SubirPedidos = () => {
             sx={{
               mt: 4,
               p: 3,
-              bgcolor: '#eff6ff',
+              bgcolor: '#ffffffff',
               borderRadius: 2,
-              borderLeft: '4px solid #6366f1',
+              borderLeft: '4px solid #222831',
             }}
           >
-            <Typography sx={{ fontWeight: 600, color: "#1e3a8a", mb: 2, fontSize: 14 }}>
+            <Typography sx={{ fontWeight: 600, color: "#222831", mb: 2, fontSize: 14 }}>
               Cómo funciona
             </Typography>
             <List dense>
@@ -255,13 +255,13 @@ const SubirPedidos = () => {
                         width: 6,
                         height: 6,
                         borderRadius: '50%',
-                        bgcolor: '#1e3a8a',
+                        bgcolor: '#222831',
                       }}
                     />
                   </ListItemIcon>
                   <ListItemText
                     primary={
-                      <Typography sx={{ color: "#1e3a8a", fontSize: 13 }}>
+                      <Typography sx={{ color: "#222831", fontSize: 13 }}>
                         {text}
                       </Typography>
                     }
